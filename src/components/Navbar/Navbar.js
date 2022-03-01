@@ -30,9 +30,10 @@ const Navbar = () => {
                     whileInView={{x:[300,0]}}
                     transition= {{duration:0.85, ease: 'easeOut'}}
                     >
-                <ul>
+                
                     <HiX onClick={()=> setToggle(false)}/>
-                    {['home', 'about', 'contact', 'work', 'skills', 'contact'].map((item)=>(
+                    <ul>
+                        {['home', 'about', 'contact', 'work', 'skills', 'contact'].map((item)=>(
                     <li key={item}>
                         <a href={`#${item}`} onClick={()=> setToggle(false)}>{item}</a>
                     </li>

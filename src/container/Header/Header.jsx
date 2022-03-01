@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.scss'
 import {motion} from 'framer-motion'
 import {images} from '../../constants'
+import {AppWrap} from '../../wrapper'
 
 
 
@@ -11,20 +12,19 @@ const scaleVariants={
     opacity: [0,1],
     transition:{
       duration: 1,
-      ease: 'easeInOut'
+      ease: 'easeInOut',
     }
   }
 }
 
-const Header = () => {
-  return (
-    <div id="home" className='app__header app__flex'>
+const Header = () => (
+    <div className="app__header app__flex">
       <motion.div
         whileInView={{x:[-100,0], opacity: [0,1]}}
         transition={{duration: 0.5}}
         className="app__header-info">
 
-          <div className='app__header-badge'>
+          <div className="app__header-badge">
             <div className="badge-cmp app__flex">
               <span>
               👋
@@ -36,7 +36,7 @@ const Header = () => {
 
             </div>
 
-            <div className='tag-cmp app__flex'>
+            <div className="tag-cmp app__flex">
             <p className="p-text">Web Developer</p>
             <p className="p-text">Freelancer</p>
             </div>
@@ -79,6 +79,6 @@ const Header = () => {
 
     </div>
   )
-}
 
-export default Header
+
+export default AppWrap(Header, 'home');

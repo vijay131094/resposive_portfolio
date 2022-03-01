@@ -20,7 +20,7 @@
     height: 100%;
     flex-direction: row;
 
-    padding: 6rem 2rem 0;
+    padding: 6rem 2rem 0rem;
 
     @media screen and (min-width: 2000px) {
         padding-top: 8rem;
@@ -43,7 +43,9 @@
     align-items: flex-start;
     height: 100%;
 
-    @media screen and (max-width:2000px) {
+    margin: 0 2rem;
+
+    @media screen and (max-width:1200px) {
         width: 100%;
         margin-right: 0rem;
 
@@ -61,12 +63,12 @@
 
     .badge-cmp, .tag-cmp{
         padding: 1rem 2rem;
-        border: var(--white-color);
+        background: var(--white-color);
         border-radius: 15px;
         flex-direction: row;
         width: auto;
 
-        box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.1);
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
     }
 
     .tag-cmp{
@@ -111,7 +113,7 @@
         border-radius: 50%;
         
         background: var(--white-color);
-        box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.1);
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
 
         img{
             width: 60%;
