@@ -11,7 +11,7 @@ const App = () => {
       <Header/>
       <About/>
       <Work/>
-      <Testimonial/>
+      
       <Skills/>
       <Footer/>
 
@@ -19,5 +19,6 @@ const App = () => {
     </div>
   )
 }
+//removed <Testimnonials/>
 
 export default App
